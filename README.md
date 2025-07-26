@@ -18,7 +18,7 @@ struct Player {
 
 
 
-## **Functions:**
+## Functions:
 
 - **New_Player** – Creates a new player.
 - **Create_Team** – Initializes a team with a goalkeeper.
@@ -28,7 +28,7 @@ struct Player {
 - **Display** – Displays the list of players.
 
 
-## **Function Declarations:**
+## Function Declarations:
 
 ```c
 struct Player* New_Player(char Name[], int Number, char Place);
@@ -44,7 +44,7 @@ int Exclude(struct Player p, struct Player team[]);
 void Display(struct Player* head);
 ```
 
-## ** To make a New Player: **
+##  To make a New Player: 
 
 ```c
 struct Player*New_Player(char Name[],int Number,char Place){
@@ -71,7 +71,7 @@ return t;
 }
 ```
 
-## ** Add a New player to the team: **
+##  Add a New player to the team: 
 ```c
 struct Player*Add_Player(char Name[],int Number,char Place,struct Player*team){
     struct Player*lastNode,*p;
@@ -96,7 +96,7 @@ return team;
 }
  ``` 
 
-## ** exchange a player by another one: **
+##  exchange a player by another one: 
 ```c
 int Exchange(struct Player*p1,struct Player*p2,struct Player*team){
 int Number=p1->Number;
@@ -113,7 +113,7 @@ return p2->Number;
 }
 ``` 
 
-## ** Exclude Player: **
+##  Exclude Player: 
 
 ```c
 int Exclude(struct Player*p,struct Player*team){
@@ -146,7 +146,7 @@ return Number;
 }
 ``` 
 
-## ** Display Player Information : **
+##  Display Player Information : 
 ```c
  void Display(struct Player*head){
 printf("--------------------------------------The Team--------------------------------------------------\n");
@@ -165,7 +165,7 @@ while(head!=NULL){
 }
 ```
 
-## ** The Main Function : **
+##  The Main Function : 
 ```c
 int main()
 {
