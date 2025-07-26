@@ -30,7 +30,7 @@ struct Player {
 
 ## **Function Declarations:**
 
-<pr>```
+```c
 struct Player* New_Player(char Name[], int Number, char Place);
 
 struct Player* Create_Team(char Name[], int Number, char Place);
@@ -42,11 +42,11 @@ int Exchange(struct Player p1, struct Player p2, struct Player team[]);
 int Exclude(struct Player p, struct Player team[]);
 
 void Display(struct Player* head);
-```</pre>
+```
 
 ## ** To make a New Player: **
 
-<pr> ```
+```c
 struct Player*New_Player(char Name[],int Number,char Place){
 struct Player*p;
 p=(struct Player*)malloc(sizeof(struct Player));
@@ -54,9 +54,12 @@ strcpy(p->Name,Name); //Buffer Overflow i know this is my old code
 p->Number=Number;
 p->Place=Place;
 return p;
-} ``` </pre>
+}
+```
+
 
 ## ** Creat team which contains a Goalkeeper: **
+```c
 struct Player*Creat_team(char Name[],int Number,char Place){
 struct Player*t;
 t=(struct Player*)malloc(sizeof(struct Player));
@@ -66,8 +69,10 @@ t->Place=Place;
 t->next=NULL;
 return t;
 }
+```
 
-//Add a New player to the team
+## ** Add a New player to the team: **
+```c
 struct Player*Add_Player(char Name[],int Number,char Place,struct Player*team){
     struct Player*lastNode,*p;
     if(team->next==NULL){
@@ -89,8 +94,10 @@ p->next=NULL;
 
 return team;
 }
+ ``` 
 
-// exchange a player by another one
+## ** exchange a player by another one: **
+```c
 int Exchange(struct Player*p1,struct Player*p2,struct Player*team){
 int Number=p1->Number;
 
@@ -104,8 +111,11 @@ team->Place=p2->Place;
 }
 return p2->Number;
 }
+``` 
 
-//Exclude Player
+## ** Exclude Player: **
+
+```c
 int Exclude(struct Player*p,struct Player*team){
     int Number=p->Number;
     struct Player*ps=team;
@@ -134,10 +144,10 @@ return Number;
 
     }
 }
+``` 
 
-
-
-
+## ** Display Player Information : **
+```c
  void Display(struct Player*head){
 printf("--------------------------------------The Team--------------------------------------------------\n");
 while(head!=NULL){
@@ -153,8 +163,10 @@ while(head!=NULL){
 
 
 }
+```
 
-
+## ** The Main Function : **
+```c
 int main()
 {
     char Name[10];
@@ -285,3 +297,4 @@ goto one;//to restart the programme
 
     return 0;
 }
+```
