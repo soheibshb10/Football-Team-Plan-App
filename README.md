@@ -58,7 +58,7 @@ return p;
 ```
 
 
-## ** Creat team which contains a Goalkeeper: **
+##  Creat team which contains a Goalkeeper: 
 ```c
 struct Player*Creat_team(char Name[],int Number,char Place){
 struct Player*t;
