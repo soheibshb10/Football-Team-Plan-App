@@ -6,14 +6,15 @@ Managing Football player Plan Using Linked List Data Structure and
 - **#include <stdlib.h>**
 
 ## Structure
-<pr>```
+```c
+struct Player {
+    char Name[10];
+    int Number;
+    char Place;
+    struct Player* next;
+};
+```
 
-struct Player{
-char Name[10];
-int Number;
-char Place;
-struct Player*next;
-}; ```</pre>
 
 
 
