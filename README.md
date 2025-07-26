@@ -2,8 +2,8 @@
 Managing Football player Plan Using Linked List Data Structure and 
 
 ## Libraries
-#include <stdio.h>
-#include <stdlib.h>
+- **#include <stdio.h>**
+- **#include <stdlib.h>**
 
 ## Structure
 <pr>```
