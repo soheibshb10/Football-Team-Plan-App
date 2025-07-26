@@ -96,7 +96,7 @@ return team;
 }
  ``` 
 
-##  exchange a player by another one: 
+##  Exchange a Player by another one: 
 ```c
 int Exchange(struct Player*p1,struct Player*p2,struct Player*team){
 int Number=p1->Number;
