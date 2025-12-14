@@ -132,7 +132,7 @@ while(head!=NULL){
 
 int main()
 {
-    char Name[10];
+    char Name[20];
     char Place,bk,y,answ1;
     int Number,ex,exc;
 struct Player*head,*p1,*p2,*po;
